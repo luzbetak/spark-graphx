@@ -10,7 +10,7 @@ package)
 	sbt clean package
 ;;
 #---------------------------------------------------------------------------------------------#
-run)
+spark)
 	spark-submit                                    \
 	  --class "SparkGraph"                          \
 	  --master local[4]                             \
@@ -27,7 +27,7 @@ run)
     echo "+-----------------------------------------------------------+"
     echo "|  ./run compile       -- sbt clean compile                 |"
     echo "|  ./run package       -- sbt clean package                 |"
-    echo "|  ./run run           -- spark-submit                      |" 
+    echo "|  ./run spark         -- spark-submit                      |" 
     echo "+-----------------------------------------------------------+"
 ;;
 #---------------------------------------------------------------------------------------------#
